@@ -26,3 +26,8 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 # Install Material UI
 - Install material ui
 `$ npm install @material-ui/core`
+
+# Create Cloud Firestore Database
+- Create Collection named messages
+- Add field and fill with message and username
+- install firebase `$ npm install firebase`
