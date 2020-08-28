@@ -7,10 +7,7 @@ import db from './firebase';
 function App() {
   
   const [input, setInput] = useState('');
-  const [messages, setMessages] = useState([
-    {username: 'wilden', message : 'Hay huys'},
-    {username: 'ali', message: 'Hay wooy'},
-  ]);
+  const [messages, setMessages] = useState([]);
   const [username, setUsername] = useState('');
   // console.log(input);
   // console.log(message);
