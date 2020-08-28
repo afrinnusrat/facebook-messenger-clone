@@ -6,7 +6,10 @@ import Message from './Message';
 function App() {
   
   const [input, setInput] = useState('');
-  const [messages, setMessages] = useState(['Hai', 'Mantap']);
+  const [messages, setMessages] = useState([
+    {username: 'wilden', text: 'Hay huys'},
+    {username: 'ali', text: 'Hay wooy'},
+  ]);
   const [username, setUsername] = useState('');
   // console.log(input);
   // console.log(message);
@@ -23,7 +26,9 @@ function App() {
   const sendMessage = (event) => {
     // all the logic to send 
     event.preventDefault();   // supaya ga ngerefres page nya ketika submit si input tag
-    setMessages([...messages, input]);
+    setMessages([
+      ...messages, {username: username, text: input}
+    ]);
     setInput('');
   }
   
@@ -45,7 +50,7 @@ function App() {
       {
         messages.map(message => (
           <>
-            <Message text={message} />
+            <Message username={message.username} text={message.text} />
           </>
         ))
       }
