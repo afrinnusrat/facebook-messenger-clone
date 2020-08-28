@@ -1,4 +1,4 @@
-# Facebook Messenger CloNe
+# Facebook Messenger Clone
 
 ### `npm start`
 
@@ -16,3 +16,6 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 # Create Project
 `$ npx create-react-app`
+
+# Setup Firebase
+- Create project on Firebase named facebook-messenger-clone-wdn
