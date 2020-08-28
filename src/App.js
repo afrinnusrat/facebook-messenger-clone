@@ -2,10 +2,13 @@ import React, { useState } from 'react';
 import './App.css';
 
 function App() {
+  
+  const [input, setInput] = useState('');
+  
   return (
     <div className="App">
       <h1>Facebook Messenger Clone Coy</h1>
-      <input />
+      <input value={input} onChange={event => setInput(event.target.value)} />
       <button>Send Messege</button>
     </div>
   );
