@@ -19,3 +19,6 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 # Setup Firebase
 - Create project on Firebase named facebook-messenger-clone-wdn
+- Create app and hosting for facebook-messenger-clone-wdn
+- `$ npm install -g firebase-tools`
+- `$ firebase login`
