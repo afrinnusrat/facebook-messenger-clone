@@ -22,3 +22,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 - Create app and hosting for facebook-messenger-clone-wdn
 - `$ npm install -g firebase-tools`
 - `$ firebase login`
+
+# Install Material UI
+- Install material ui
+`$ npm install @material-ui/core`
