@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button, FormControl, Input, InputLabel } from '@material-ui/core';
 import './App.css';
+import Message from './Message';
 
 function App() {
   
@@ -32,7 +33,9 @@ function App() {
 
       {
         messages.map(message => (
-          <p>{message}</p>
+          <>
+            <Message text={message} />
+          </>
         ))
       }
 
