@@ -4,6 +4,7 @@ import './App.css';
 function App() {
   
   const [input, setInput] = useState('');
+  console.log(input);
   
   return (
     <div className="App">
