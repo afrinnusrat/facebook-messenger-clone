@@ -22,7 +22,7 @@ function App() {
 
       <form>
         <input value={input} onChange={event => setInput(event.target.value)} />
-        <Button variant="contained" color="primary" type='submit' onClick={sendMessage}>Send Messege</Button>
+        <Button disabled={!input} variant="contained" color="primary" type='submit' onClick={sendMessage}>Send Messege</Button>
       </form>
 
       {/* Message themselves */}
