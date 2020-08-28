@@ -9,7 +9,8 @@ function App() {
   // console.log(message);
 
   const sendMessage = (event) => {
-    // all the logic to send
+    // all the logic to send 
+    event.preventDefault();   // supaya ga ngerefres page nya ketika submit si input tag
     setMessages([...messages, input]);
     setInput('');
   }
@@ -17,8 +18,11 @@ function App() {
   return (
     <div className="App">
       <h1>Facebook Messenger Clone Coy</h1>
-      <input value={input} onChange={event => setInput(event.target.value)} />
-      <button onClick={sendMessage}>Send Messege</button>
+
+      <form>
+        <input value={input} onChange={event => setInput(event.target.value)} />
+        <button type='submit' onClick={sendMessage}>Send Messege</button>
+      </form>
 
       {/* Message themselves */}
 
