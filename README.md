@@ -39,3 +39,6 @@ react flip move for animation, use case for this project is chat animation
 - Install react flip move
 `npm i -S react-flip-move`
 - Usage with Functional Components (see in the github link)
+
+# Install Material UI Icons
+`$ npm i @material-ui/icons`
