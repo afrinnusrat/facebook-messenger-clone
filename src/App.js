@@ -3,6 +3,7 @@ import { Button, FormControl, Input, InputLabel } from '@material-ui/core';
 import './App.css';
 import Message from './Message';
 import db from './firebase';
+import firebase from 'firebase';
 
 function App() {
   
@@ -31,9 +32,13 @@ function App() {
   const sendMessage = (event) => {
     // all the logic to send 
     event.preventDefault();   // supaya ga ngerefres page nya ketika submit si input tag
-    setMessages([
-      ...messages, {username: username, message: input}
-    ]);
+
+    db.collection('messages').add({
+      message: input,
+      username: username,
+      timestamp: firebase.firestore.FieldValue.serverTimestamp()
+    })
+
     setInput('');
   }
   
