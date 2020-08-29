@@ -4,6 +4,7 @@ import './App.css';
 import Message from './Message';
 import db from './firebase';
 import firebase from 'firebase';
+import FlipMove from 'react-flip-move';
 
 function App() {
   
@@ -58,14 +59,15 @@ function App() {
       </form>
 
       {/* Message themselves */}
-
-      {
-        messages.map(message => (
-          <>
-            <Message username={username} message={message} />
-          </>
-        ))
-      }
+      <FlipMove>
+        {
+          messages.map(message => (
+            <>
+              <Message username={username} message={message} />
+            </>
+          ))
+        }
+      </FlipMove>
 
     </div>
   );

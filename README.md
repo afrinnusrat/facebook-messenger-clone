@@ -38,3 +38,4 @@ react flip move for animation, use case for this project is chat animation
 `https://github.com/joshwcomeau/react-flip-move`
 - Install react flip move
 `npm i -S react-flip-move`
+- Usage with Functional Components (see in the github link)
