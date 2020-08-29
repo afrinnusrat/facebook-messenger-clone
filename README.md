@@ -31,3 +31,10 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 - Create Collection named messages
 - Add field and fill with message and username
 - install firebase `$ npm install firebase`
+
+# Install React Flip Move
+react flip move for animation, use case for this project is chat animation
+-  Goto
+`https://github.com/joshwcomeau/react-flip-move`
+- Install react flip move
+`npm i -S react-flip-move`
